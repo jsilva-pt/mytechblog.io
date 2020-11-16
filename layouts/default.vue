@@ -6,9 +6,7 @@
       <div class="flex justify-between w-full align-center px-5">
         <nuxt-link class="flex items-center" to="/">
           <div>
-            <h1 class="text-3xl font-medium">
-              MyTechBlog
-            </h1>
+            <h1 class="text-3xl font-medium">MyTechBlog</h1>
           </div>
         </nuxt-link>
 
@@ -42,9 +40,7 @@
 
     <div class="w-full max-w-md mx-auto text-center border-t mt-10">
       <div class="p-5 inline-block">
-        <div class="text-sm mb-3">
-          @ 2020 José Silva.
-        </div>
+        <div class="text-sm mb-3">@ 2020 José Silva.</div>
         <div class="mb-3">
           <a :href="$config.githubAccountUrl" target="_blank" rel="noopener">
             <img
