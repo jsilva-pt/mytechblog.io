@@ -63,7 +63,7 @@ export default {
   },
   computed: {
     githubArticleUrl() {
-      return `${this.$config.githubRepositoryUrl}content${this.article.path}${this.article.extension}`
+      return `${this.$config.githubRepositoryUrl}blob/main/content${this.article.path}${this.article.extension}`
     },
   },
   mounted() {

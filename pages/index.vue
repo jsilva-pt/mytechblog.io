@@ -24,7 +24,7 @@ export default {
       titleTemplate: '%s',
       meta: metaTags({
         title: 'A blog by José Silva',
-        description: 'Frontend development and technologies articles',
+        description: 'Frontend development articles',
         isTitlePrepended: true,
         isTitlePrefixed: false,
       }),

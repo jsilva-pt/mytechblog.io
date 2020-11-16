@@ -2,7 +2,6 @@
 isSerieIntroduction: false
 title: Lerna & Yarn Workspaces
 description: Use Lerna and Yarn Workspaces to manage multiple javascript packages inside the same repository.
-img: 'lerna-yarn-workspaces.webp'
 ---
 
 ## Introduction

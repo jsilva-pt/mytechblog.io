@@ -38,7 +38,7 @@ export default {
       title: 'Series',
       meta: metaTags({
         title: 'Series',
-        description: 'Frontend development and technologies articles',
+        description: 'Frontend development articles',
       }),
     }
   },
