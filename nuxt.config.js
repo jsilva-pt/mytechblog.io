@@ -24,8 +24,12 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       // open graph
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://mytechblog.io/' },
-      { hid: 'og:image', property: 'og:image', content: '/social.jpg' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'MyTechBlog' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://mytechblog.io/social.jpg',
+      },
       // twitter
       {
         hid: 'twitter:card',
@@ -33,11 +37,15 @@ export default {
         content: 'summary_large_image',
       },
       {
-        hid: 'twitter:url',
-        property: 'twitter:url',
-        content: 'https://mytechblog.io/',
+        hid: 'twitter:site',
+        name: 'twitter:site',
+        content: '@jmanuelsilvapt',
       },
-      { hid: 'twitter:image', name: 'twitter:image', content: '/social.jpg' },
+      {
+        hid: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@jmanuelsilvapt',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -76,7 +84,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     '@nuxtjs/google-gtag',
     '@nuxtjs/sitemap',

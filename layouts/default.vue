@@ -97,5 +97,24 @@ export default {
       default: false,
     },
   },
+  head() {
+    const canonical = `https://mytechblog.io${this.$route.path}`
+    const link = [
+      { rel: 'canonical', href: canonical },
+      {
+        rel: 'alternate',
+        hreflang: 'en',
+        href: `https://mytechblog.io${this.$route.path}`,
+      },
+    ]
+    return {
+      htmlAttrs: { lang: 'en' },
+      link,
+      meta: [
+        { hid: 'og:url', property: 'og:url', content: canonical },
+        { hid: 'twitter:url', property: 'twitter:url', content: canonical },
+      ],
+    }
+  },
 }
 </script>

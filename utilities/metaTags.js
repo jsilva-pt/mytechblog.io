@@ -1,6 +1,8 @@
 export default function metaTags({
   title = 'MyTechBlog',
   description,
+  publishedTime,
+  modifiedTime,
   isTitlePrepended = false,
   isTitlePrefixed = true,
 }) {
@@ -9,11 +11,17 @@ export default function metaTags({
       isTitlePrefixed ? ' — MyTechBlog' : ''
     }`
 
-  return [
+  const author = 'José Silva'
+  const metas = [
     {
       hid: 'description',
       name: 'description',
       content: description,
+    },
+    {
+      hid: 'author',
+      name: 'author',
+      content: author,
     },
     {
       hid: 'og:title',
@@ -38,4 +46,31 @@ export default function metaTags({
       content: description,
     },
   ]
+
+  if (publishedTime) {
+    metas.push(
+      {
+        hid: 'og:type',
+        name: 'og:type',
+        content: 'article',
+      },
+      {
+        hid: 'article:published_time',
+        name: 'article:published_time',
+        content: publishedTime,
+      },
+      {
+        hid: 'article:modified_time',
+        name: 'article:modified_time',
+        content: modifiedTime,
+      },
+      {
+        hid: 'article:author',
+        name: 'article:author',
+        content: author,
+      }
+    )
+  }
+
+  return metas
 }
