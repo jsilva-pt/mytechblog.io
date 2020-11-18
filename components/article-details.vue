@@ -1,7 +1,14 @@
 <template>
   <div>
     <article>
-      <div class="p-5 sm:px-0 mb-8">
+      <article-share
+        class="px-5 justify-end"
+        :title="article.title"
+        :description="article.description"
+        :hashtags="article.hashtags"
+      />
+
+      <div class="pt-5 px-5 sm:px-0">
         <h1 class="text-4xl font-medium mb-3 leading-none">
           {{ article.title }}
         </h1>
@@ -10,9 +17,18 @@
         </p>
         <p class="text-gray-700">{{ article.description }}</p>
       </div>
-      <div class="mx-5 sm:mx-0">
+
+      <div class="mx-5 sm:mx-0 mt-10">
         <nuxt-content :document="article" />
-        <p class="mt-10">
+
+        <article-share
+          class="mt-10"
+          :title="article.title"
+          :description="article.description"
+          :hashtags="article.hashtags"
+        />
+
+        <p>
           Caught a mistake or want to contribute to improve this article?
           <a :href="githubArticleUrl" target="_blank" rel="noopener">
             Edit this page on GitHub!
@@ -45,7 +61,9 @@
 </template>
 
 <script>
+import ArticleShare from './article-share.vue'
 export default {
+  components: { ArticleShare },
   layout: 'details',
   props: {
     article: {

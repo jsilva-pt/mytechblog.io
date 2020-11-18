@@ -22,11 +22,13 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.10.0",
+    "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.7",
-    "prism-themes": "^1.5.0"
+    "prism-themes": "^1.5.0",
+    "vue-social-sharing": "^3.0.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",

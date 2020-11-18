@@ -2,6 +2,13 @@
 isSerieIntroduction: false
 title: Lerna & Yarn Workspaces
 description: Use Lerna and Yarn Workspaces to manage multiple javascript packages inside the same repository.
+hashtags:
+  - Lerna
+  - YarnWorkspaces
+  - Monorepos
+  - Javascript
+  - Reusability
+  - Maintainability
 ---
 
 ## Introduction

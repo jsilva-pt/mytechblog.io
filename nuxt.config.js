@@ -1,9 +1,53 @@
+const productionDomain = 'https://mytechblog.io'
+const twitterUsername = 'jmanuelsilvapt'
+const hostname = process.env.NUXT_ENV_URL || 'http://localhost:3000'
+
+const createSitemapRoutes = async () => {
+  const routes = []
+  const { $content } = require('@nuxt/content')
+
+  let posts = []
+  if (posts === null || posts.length === 0) {
+    posts = await $content('', { deep: true })
+      .where({
+        isSerieIntroduction: { $ne: true },
+        isArticle: { $ne: false },
+      })
+      .fetch()
+  }
+
+  for (const post of posts) {
+    routes.push(`${post.slug}`)
+  }
+  return routes
+}
+
+const createFeedArticles = async function (feed) {
+  feed.options = {
+    title: 'MyTechBlog',
+    description: 'Frontend development articles',
+    link: hostname,
+  }
+
+  const { $content } = require('@nuxt/content')
+  const articles = await $content('articles').fetch()
+
+  articles.forEach((article) => {
+    const url = `${hostname}/${article.slug}`
+
+    feed.addItem({
+      title: article.title,
+      id: url,
+      link: url,
+      date: article.published,
+      description: article.description,
+      content: article.description,
+      author: [{ name: 'José Silva' }],
+    })
+  })
+}
+
 export default {
-  /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -28,7 +72,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://mytechblog.io/social.jpg',
+        content: `${productionDomain}/social.jpg`,
       },
       // twitter
       {
@@ -39,21 +83,31 @@ export default {
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@jmanuelsilvapt',
+        content: `@${twitterUsername}`,
       },
       {
         hid: 'twitter:creator',
         name: 'twitter:creator',
-        content: '@jmanuelsilvapt',
+        content: `@${twitterUsername}`,
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        title: 'MyTechBlog',
+        href: '/feed.xml',
+      },
+    ],
   },
   publicRuntimeConfig: {
     githubRepositoryUrl: 'https://github.com/jsilva-pt/mytechblog.io/',
     githubAccountUrl: 'https://github.com/jsilva-pt/',
     twitterAccountUrl: 'https://twitter.com/jmanuelsilvapt/',
+    twitterUsername,
     linkedinAccountUrl: 'https://www.linkedin.com/in/jsilva-pt/',
+    productionDomain,
   },
   /*
    ** Global CSS
@@ -84,8 +138,10 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    'vue-social-sharing/nuxt',
     '@nuxt/content',
     '@nuxtjs/google-gtag',
+    '@nuxtjs/feed',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
@@ -94,10 +150,24 @@ export default {
     id: process.env.NUXT_ENV_GA_ID,
   },
 
+  feed: [
+    {
+      path: '/feed.xml',
+      create: createFeedArticles,
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+      data: ['some', 'info'],
+    },
+  ],
+
   sitemap: {
-    hostname: process.env.NUXT_ENV_URL || 'http://localhost:3000',
+    hostname,
     gzip: true,
-    routes: ['/lerna-yarn-workspaces'],
+    routes: createSitemapRoutes,
+  },
+
+  robots: {
+    Sitemap: `${hostname}/sitemap.xml`,
   },
 
   /*

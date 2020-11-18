@@ -25,6 +25,14 @@
               alt="github"
             />
           </a>
+          <a
+            href="/feed.xml"
+            target="_blank"
+            class="hidden sm:block ml-3"
+            rel="noopener"
+          >
+            <img src="~/assets/rss.svg" width="24" height="24" alt="rss" />
+          </a>
         </div>
       </div>
     </div>
@@ -38,7 +46,7 @@
       <Nuxt />
     </div>
 
-    <div class="w-full max-w-md mx-auto text-center border-t mt-10">
+    <footer class="w-full max-w-md mx-auto text-center border-t mt-5">
       <div class="p-5 inline-block">
         <div class="text-sm mb-3">@ 2020 José Silva.</div>
         <div class="mb-3">
@@ -85,7 +93,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
 </template>
 
@@ -98,13 +106,13 @@ export default {
     },
   },
   head() {
-    const canonical = `https://mytechblog.io${this.$route.path}`
+    const canonical = this.$config.productionDomain + this.$route.path
     const link = [
       { rel: 'canonical', href: canonical },
       {
         rel: 'alternate',
         hreflang: 'en',
-        href: `https://mytechblog.io${this.$route.path}`,
+        href: canonical,
       },
     ]
     return {
