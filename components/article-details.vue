@@ -13,7 +13,7 @@
           {{ article.title }}
         </h1>
         <p class="text-sm text-gray-700 mb-1">
-          {{ formatDate(article.createdAt) }}
+          {{ formatDate(article.publishedTime) }}
         </p>
         <p class="text-gray-700">{{ article.description }}</p>
       </div>

@@ -19,8 +19,8 @@ export default {
       meta: metaTags({
         title: this.article.title,
         description: this.article.description,
-        publishedTime: this.article.createdAt,
-        modifiedTime: this.article.updatedAt,
+        publishedTime: this.article.publishedTime,
+        modifiedTime: this.article.modifiedTime,
       }),
     }
   },

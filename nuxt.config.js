@@ -39,7 +39,7 @@ const createFeedArticles = async function (feed) {
       title: article.title,
       id: url,
       link: url,
-      date: article.published,
+      date: article.publishedTime,
       description: article.description,
       content: article.description,
       author: [{ name: 'José Silva' }],

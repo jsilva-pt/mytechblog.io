@@ -12,6 +12,7 @@ export default function metaTags({
     }`
 
   const author = 'José Silva'
+
   const metas = [
     {
       hid: 'description',
@@ -55,21 +56,24 @@ export default function metaTags({
         content: 'article',
       },
       {
-        hid: 'article:published_time',
-        name: 'article:published_time',
-        content: publishedTime,
-      },
-      {
-        hid: 'article:modified_time',
-        name: 'article:modified_time',
-        content: modifiedTime,
-      },
-      {
         hid: 'article:author',
         name: 'article:author',
         content: author,
+      },
+      {
+        hid: 'article:published_time',
+        name: 'article:published_time',
+        content: publishedTime,
       }
     )
+
+    if (modifiedTime) {
+      metas.push({
+        hid: 'article:modified_time',
+        name: 'article:modified_time',
+        content: modifiedTime,
+      })
+    }
   }
 
   return metas

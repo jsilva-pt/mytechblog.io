@@ -10,7 +10,7 @@
         {{ block.title }}
       </h2>
       <p class="text-sm text-gray-700 mb-1">
-        {{ formatDate(block.createdAt) }}
+        {{ formatDate(block.publishedTime) }}
       </p>
       <p class="text-gray-700">{{ block.description }}</p>
     </nuxt-link>
