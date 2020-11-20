@@ -34,12 +34,11 @@ const createFeedArticles = async function (feed) {
 
   articles.forEach((article) => {
     const url = `${hostname}/${article.slug}`
-
     feed.addItem({
       title: article.title,
       id: url,
       link: url,
-      date: article.publishedTime,
+      date: new Date(article.publishedTime),
       description: article.description,
       content: article.description,
       author: [{ name: 'José Silva' }],
