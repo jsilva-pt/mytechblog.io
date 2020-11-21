@@ -158,7 +158,7 @@ export default {
     subscribe() {
       this.$axios({
         method: 'post',
-        url: `${this.$configs.currentDomain}/api/subscribe`,
+        url: `${this.$config.currentDomain}/api/subscribe`,
         data: { email: this.subscribeEmail },
       })
     },
