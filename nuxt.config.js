@@ -107,6 +107,7 @@ export default {
     twitterUsername,
     linkedinAccountUrl: 'https://www.linkedin.com/in/jsilva-pt/',
     productionDomain,
+    currentDomain: process.env.NUXT_ENV_URL2,
   },
   /*
    ** Global CSS
