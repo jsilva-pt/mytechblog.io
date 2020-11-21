@@ -137,6 +137,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/axios',
     'vue-social-sharing/nuxt',
     '@nuxt/content',
     '@nuxtjs/google-gtag',
