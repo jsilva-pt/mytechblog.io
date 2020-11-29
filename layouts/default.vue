@@ -46,6 +46,39 @@
       <Nuxt />
     </div>
 
+    <div class="w-full max-w-xs mx-auto text-center border-t mt-10 py-5">
+      <div class="text-4xl">Newsletter</div>
+
+      <p v-if="subscribed">
+        An email to confirm your subscription has been sent to
+        {{ subscribedEmail }} 💚
+      </p>
+
+      <form v-else>
+        <div class="mb-3">Get notified when a new article is released.</div>
+        <div class="mb-2 flex">
+          <input
+            v-model="subscribedEmail"
+            class="border border-teal-500 rounded-l w-full text-gray-700 py-1 px-2 focus:outline-none"
+            type="email"
+            placeholder="Email"
+            aria-label="Email"
+          />
+          <button
+            class="bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded-r"
+            type="button"
+            @click="subscribe"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <div class="text-xs text-left">
+          ✋️ I promise to respect your inbox. No spam.
+        </div>
+      </form>
+    </div>
+
     <footer class="w-full max-w-md mx-auto text-center border-t mt-5">
       <div class="p-5 inline-block">
         <div class="text-sm mb-3">@ 2020 José Silva.</div>
@@ -105,6 +138,12 @@ export default {
       default: false,
     },
   },
+  data() {
+    return {
+      subscribedEmail: null,
+      subscribed: false,
+    }
+  },
   head() {
     const canonical = this.$config.productionDomain + this.$route.path
     const link = [
@@ -123,6 +162,19 @@ export default {
         { hid: 'twitter:url', property: 'twitter:url', content: canonical },
       ],
     }
+  },
+  methods: {
+    async subscribe() {
+      try {
+        await this.$axios({
+          method: 'post',
+          url: `${this.$config.currentDomain}/api/subscribe`,
+          data: { email: this.subscribedEmail },
+        })
+
+        this.subscribed = true
+      } catch {}
+    },
   },
 }
 </script>

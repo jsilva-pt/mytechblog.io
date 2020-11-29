@@ -1,6 +1,8 @@
 const productionDomain = 'https://mytechblog.io'
 const twitterUsername = 'jmanuelsilvapt'
-const hostname = process.env.NUXT_ENV_URL || 'http://localhost:3000'
+const hostname = process.env.NUXT_ENV_URL2
+  ? `https://${process.env.NUXT_ENV_URL2}`
+  : 'http://localhost:3000'
 
 const createSitemapRoutes = async () => {
   const routes = []
@@ -107,6 +109,7 @@ export default {
     twitterUsername,
     linkedinAccountUrl: 'https://www.linkedin.com/in/jsilva-pt/',
     productionDomain,
+    currentDomain: hostname,
   },
   /*
    ** Global CSS
@@ -137,6 +140,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/axios',
     'vue-social-sharing/nuxt',
     '@nuxt/content',
     '@nuxtjs/google-gtag',
