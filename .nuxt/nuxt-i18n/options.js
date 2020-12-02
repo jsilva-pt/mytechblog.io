@@ -1,0 +1,29 @@
+export const vueI18n = {"fallbackLocale":"en","messages":{"en":{"light":"Light","dark":"Dark","meta":{"title":"NuxtJS Blog","description":"Discover articles from the NuxtJS team and NuxtJS Community about NuxtJS, tips and tricks included!"},"homepage":{"hi":"Hi!","name":"My name is José Silva.","about":"I'm the Lead Frontend Engineer of JumiaPay.","blog":"When I have some free time, I like to try new stuff and write blog posts to consolidate my knowledge. This blog is the result of that. Here, you will find articles about Frontend Development in general but mostly related to Javascript, Vue.js, and NuxtJS."},"contribute":{"title":"Contributors","blog":"Caught a mistake or want to contribute to this blog post?","edit_on_github":"Edit this page on GitHub!"},"newsletter":{"title":"{nuxt} Newsletter","description":"Get the latest articles to your inbox.","form":{"email":"Email","subscribing":"Subscribing...","subscribe":"Subscribe","subscribed_messages":{"pre":"An email to confirm your subscription has been sent to","post":"💚"}}},"blogPost":{"imgAlt":"Blog Post Image"},"noResults":{"title":"No blog posts found!","description":{"1":"Sorry but I haven't written any article for the criteria you inserted.","2":"If you would like me to write about a specific theme please email me the suggestion."}},"pageNotFound":{"title":"Page Not Found","description":{"1":"The page you are trying to access does not exist!","2":"If you got here by clicking in a link inside the website please report this error ..."}},"footer":{"links":{"social":{"title":"Follow"},"built":{"title":"Built with"},"support":{"title":"Support","sponsor":"Sponsoring","documentation":"Documentation","contributionGuide":"Contribution guide"}}}}}}
+export const vueI18nLoader = false
+export const locales = [{"code":"en","iso":"en-US","file":"en-US.js","name":"English"}]
+export const defaultLocale = 'en'
+export const routesNameSeparator = '___'
+export const defaultLocaleRouteNameSuffix = 'default'
+export const strategy = 'prefix_except_default'
+export const lazy = false
+export const langDir = null
+export const rootRedirect = null
+export const detectBrowserLanguage = {"useCookie":true,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"alwaysRedirect":false,"fallbackLocale":"","onlyOnRoot":false}
+export const differentDomains = false
+export const seo = false
+export const baseUrl = ''
+export const vuex = {"moduleName":"i18n","syncLocale":false,"syncMessages":false,"syncRouteParams":true}
+export const parsePages = false
+export const pages = {}
+export const beforeLanguageSwitch = () => null
+export const onLanguageSwitched = () => null
+export const IS_UNIVERSAL_MODE = true
+export const MODULE_NAME = 'nuxt-i18n'
+export const LOCALE_CODE_KEY = 'code'
+export const LOCALE_ISO_KEY = 'iso'
+export const LOCALE_DOMAIN_KEY = 'domain'
+export const LOCALE_FILE_KEY = 'file'
+export const STRATEGIES = {"PREFIX":"prefix","PREFIX_EXCEPT_DEFAULT":"prefix_except_default","PREFIX_AND_DEFAULT":"prefix_and_default","NO_PREFIX":"no_prefix"}
+export const COMPONENT_OPTIONS_KEY = 'nuxtI18n'
+export const localeCodes = ["en"]
+export const trailingSlash = undefined
