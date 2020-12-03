@@ -8,6 +8,9 @@ export default theme({
   },
   titleTemplate: '%s — MyTechBlog',
   pwa: {
+    manifest: {
+      short_name: 'MyTechBlog',
+    },
     meta: {
       name: 'MyTechBlog',
       author: 'José Silva',
