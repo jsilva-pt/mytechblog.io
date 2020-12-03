@@ -18,6 +18,9 @@ export default theme({
       twitterCreator: 'jmanuelsilvapt'
     }
   },
+  colorMode: {
+    preference: 'dark',
+  },
   i18n: {
     baseUrl,
     vueI18n: {
