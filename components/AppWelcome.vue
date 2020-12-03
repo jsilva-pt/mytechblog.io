@@ -14,7 +14,7 @@
     <div
       class="md:w-6/12 text-light-elevatedSurface dark:text-dark-elevatedSurface order-1 md:order-2"
     >
-      <img :src="$store.state.settings.welcome.img" class="w-2/3 float-right" />
+      <img :src="$store.state.settings.welcome.img" class="w-2/3 float-right" alt="welcome image" />
     </div>
   </div>
 </template>

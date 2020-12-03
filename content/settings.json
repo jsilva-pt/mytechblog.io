@@ -52,17 +52,13 @@
       },
       {
         "text": "NuxtJS Content Theme Blog",
-        "href": "https://content.nuxtjs.org"
+        "href": "https://github.com/jsilva-pt/nuxt-content-theme-blog"
       }
     ],
     "support": [
       {
         "key": "footer.links.support.sponsor",
         "href": "https://github.com/sponsors/jsilva-pt"
-      },
-      {
-        "key": "footer.links.support.contributionGuide",
-        "href": "https://github.com/nuxt/nuxtjs.org/blob/master/content/en/_archives/guide/contribution-guide.md"
       }
     ]
   }

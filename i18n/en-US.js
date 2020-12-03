@@ -2,7 +2,7 @@ module.exports = {
   light: 'Light',
   dark: 'Dark',
   meta: {
-    title: 'NuxtJS Blog',
+    title: 'MyTechBlog — A blog by José Silva',
     description:
       'Discover articles from the NuxtJS team and NuxtJS Community about NuxtJS, tips and tricks included!',
   },

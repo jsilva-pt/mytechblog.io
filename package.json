@@ -1,7 +1,7 @@
 {
-  "name": "my-tech-blog",
+  "name": "MyTechBlog",
   "version": "0.0.0",
-  "description": "Blog for NuxtJS",
+  "description": "A tech blog by José Silva",
   "author": "José Silva",
   "private": true,
   "scripts": {

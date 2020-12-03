@@ -279,7 +279,7 @@ It also means that the **tags** created in our repository will be **per package*
 
 Using the steps described in the **Fixed Versions** section, the tags generated in our repository are the following:
 
-| yo |
+| |
 |:------------- |
 | 2.0.0 |
 | 1.1.1 |
