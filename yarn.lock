@@ -876,10 +876,10 @@
     js-yaml "^3.13.1"
     json5 "^2.1.1"
 
-"@jsilva-pt/nuxt-content-theme-blog@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.2.1.tgz#e8a4f3e7b84d015ba69317709b7dd97319dcf8c9"
-  integrity sha512-zlT7CosffWbZq7aZRrzD7ylMcLI48qSZuk6tK6LD14c+ojKF8LTTKf5kotdsY6Pt46voS6zA4wF0UXieThyZgQ==
+"@jsilva-pt/nuxt-content-theme-blog@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.2.2.tgz#bd3744d1dfa37a5e306af7ac2a8c09e5f1236c8a"
+  integrity sha512-mPIz849WeOPWTQPY0g7oNZoko8EcLFtl4V1BGTPxkl4ow1zgASSv3PVlzZaN7QAgv9tH2vTT0HbfErpnbwTKsw==
   dependencies:
     "@nuxt/content" "^1.10.0"
     "@nuxtjs/color-mode" "^2.0.0"
