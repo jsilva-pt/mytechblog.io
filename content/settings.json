@@ -1,10 +1,4 @@
 {
-  "author": {
-    "name": "José Silva"
-  },
-  "welcome": {
-    "img": "/avatar/welcome.png"
-  },
   "noResults": {
     "img": "/avatar/no-results.png"
   },
@@ -14,6 +8,7 @@
   "social": {
     "showOnHeader": true,
     "shareEnabled": true,
+    "defaultHashtags": ["MyTechBlog"],
     "github": "https://github.com/jsilva-pt/",
     "linkedin": "https://www.linkedin.com/in/jsilva-pt/",
     "twitter": "https://twitter.com/jmanuelsilvapt"

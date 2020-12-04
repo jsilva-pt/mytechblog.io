@@ -5,7 +5,7 @@
     </div>
 
     <span class="font-medium leading-normal ml-2 mt-5 xl:mt-6">
-      by {{ $store.state.settings.author.name }}
+      by José Silva
     </span>
   </div>
 </template>

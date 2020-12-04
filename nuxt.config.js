@@ -1,8 +1,14 @@
 import theme from '@jsilva-pt/nuxt-content-theme-blog'
 
 const baseUrl = 'https://mytechblog.io'
+const blogAuthor = 'José Silva'
 
 export default theme({
+  feedOptions: {
+    title: 'MyTechBlog',
+    description: 'Frontend development articles',
+    link: baseUrl,
+  },
   publicRuntimeConfig: {
     baseUrl
   },
@@ -13,7 +19,7 @@ export default theme({
     },
     meta: {
       name: 'MyTechBlog',
-      author: 'José Silva',
+      author: blogAuthor,
       theme_color: '#2C3E50',
       ogHost: baseUrl,
       twitterCard: 'summary_large_image',
@@ -32,5 +38,13 @@ export default theme({
         en: require('./i18n/en-US'),
       },
     },
+  },
+
+  modules: [
+    '@nuxtjs/google-gtag'
+  ],
+
+  'google-gtag': {
+    id: process.env.NUXT_ENV_GA_ID,
   },
 })

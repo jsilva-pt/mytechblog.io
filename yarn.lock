@@ -876,10 +876,10 @@
     js-yaml "^3.13.1"
     json5 "^2.1.1"
 
-"@jsilva-pt/nuxt-content-theme-blog@^0.1.0":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.1.2.tgz#f12e0dfad279cd9fa20871175cf99c785dc56af3"
-  integrity sha512-cHrsnfkumgBMSpcrn80Sy0s9ISt4MTL6oiC28hFnB08i1KlZBSHaJmIm9ttQrFWxl8ej3CuokWIvIlbYqtLvDw==
+"@jsilva-pt/nuxt-content-theme-blog@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.2.1.tgz#e8a4f3e7b84d015ba69317709b7dd97319dcf8c9"
+  integrity sha512-zlT7CosffWbZq7aZRrzD7ylMcLI48qSZuk6tK6LD14c+ojKF8LTTKf5kotdsY6Pt46voS6zA4wF0UXieThyZgQ==
   dependencies:
     "@nuxt/content" "^1.10.0"
     "@nuxtjs/color-mode" "^2.0.0"
@@ -1330,6 +1330,11 @@
   dependencies:
     consola "^2.15.0"
     google-fonts-helper "^1.1.1"
+
+"@nuxtjs/google-gtag@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/google-gtag/-/google-gtag-1.0.4.tgz#57562d8ec4c7694573e77edf72097da4a34b0d68"
+  integrity sha512-0Xgbx1uQ9pKeV2QdU9xoxJVdgH66qyGQJ0l8pzVxz5X476qvJunj6fbcjWk0gT+MEX/VOAhfT/zw0Z1z9q9oNg==
 
 "@nuxtjs/pwa@^3.2.2":
   version "3.3.2"
@@ -6366,7 +6371,7 @@ nuxt-i18n@^6.15.4:
     lodash.clonedeep "^4.5.0"
     vue-i18n "^8.18.1"
 
-nuxt@^2.14.7:
+nuxt@^2.14.9:
   version "2.14.9"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.14.9.tgz#823e98c687e0029d655349b3c0b8c1180623095d"
   integrity sha512-AetvJbY0elQ4VWcSURZAV/YXavUQeCzXHW510vLEAMa4ESwY6uFb8BdJFS8fMBvgffQx0YlOiMDAfTA+fRkAdQ==
