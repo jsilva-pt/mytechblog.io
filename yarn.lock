@@ -876,30 +876,30 @@
     js-yaml "^3.13.1"
     json5 "^2.1.1"
 
-"@jsilva-pt/nuxt-content-theme-blog@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.2.2.tgz#bd3744d1dfa37a5e306af7ac2a8c09e5f1236c8a"
-  integrity sha512-mPIz849WeOPWTQPY0g7oNZoko8EcLFtl4V1BGTPxkl4ow1zgASSv3PVlzZaN7QAgv9tH2vTT0HbfErpnbwTKsw==
+"@jsilva-pt/nuxt-content-theme-blog@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.2.3.tgz#d5a045234a037a1ddc6d7d09e60820b4a2327683"
+  integrity sha512-y9+6f2iaadntCU0y8wjOU/9U8pYc3APEClxQEQeDxHLFCAlCnt9p7yLBALGNLeo2cdti83cz+o6bDa5N1KLvdg==
   dependencies:
-    "@nuxt/content" "^1.10.0"
-    "@nuxtjs/color-mode" "^2.0.0"
+    "@nuxt/content" "^1.11.1"
+    "@nuxtjs/color-mode" "^2.0.2"
     "@nuxtjs/feed" "^2.0.0"
     "@nuxtjs/google-fonts" "1.2.0"
-    "@nuxtjs/pwa" "^3.2.2"
+    "@nuxtjs/pwa" "^3.3.2"
     "@nuxtjs/robots" "^2.4.2"
     "@nuxtjs/sitemap" "^2.4.0"
     "@nuxtjs/svg" "^0.1.12"
-    "@nuxtjs/tailwindcss" "^3.2.0"
+    "@nuxtjs/tailwindcss" "^3.3.3"
     clipboard "^2.0.6"
-    core-js "^3.6.5"
+    core-js "^3.8.0"
     defu "^3.2.2"
     nuxt-i18n "^6.15.4"
     prism-themes "^1.5.0"
-    reading-time "^1.2.0"
-    sass "^1.29.0"
+    reading-time "^1.2.1"
+    sass "^1.30.0"
     sass-loader "^10.1.0"
     vue-observe-visibility "^0.4.6"
-    vue-social-sharing "^3.0.3"
+    vue-social-sharing "^3.0.4"
 
 "@lokidb/full-text-search@^2.1.0":
   version "2.1.0"
@@ -1029,7 +1029,7 @@
     rc9 "^1.2.0"
     std-env "^2.2.1"
 
-"@nuxt/content@^1.10.0":
+"@nuxt/content@^1.11.1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-1.11.1.tgz#60d850d01d2f946b896ddb8a8736c43cfe2cdd72"
   integrity sha512-aIB1LSJZfTx0cBq+oWi64lvPyX0vnE0D+g0kQCp52RSPWyxPtogrg3rnWQf/NU1JEDHaO8aFuXB/Pk57tjSZMQ==
@@ -1306,12 +1306,12 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/color-mode@^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-2.0.1.tgz#31e9ff2f2f5f40c5e630ecd5d73d88d060e60db0"
-  integrity sha512-mIumMwFcXiIkQurJyh/9zrBnUa5f31CKvj6aH6Ko4J+gBV7TP+CrQgwt7hQIhPApbio4wyLnLy/R0GBPMqei3Q==
+"@nuxtjs/color-mode@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-2.0.2.tgz#98292e44b9774262c66aad1782b1430593441492"
+  integrity sha512-j5xsy3R6rWNRon8Rvzut7J4QyGWWsAYfdMS80vp+1u9I+9k/lOeFzwzQW4Sxsan+nhQmsKi9XaWS7o0Vk1g1JA==
   dependencies:
-    defu "^2.0.4"
+    defu "^3.2.2"
     lodash.template "^4.5.0"
 
 "@nuxtjs/feed@^2.0.0":
@@ -1336,7 +1336,7 @@
   resolved "https://registry.yarnpkg.com/@nuxtjs/google-gtag/-/google-gtag-1.0.4.tgz#57562d8ec4c7694573e77edf72097da4a34b0d68"
   integrity sha512-0Xgbx1uQ9pKeV2QdU9xoxJVdgH66qyGQJ0l8pzVxz5X476qvJunj6fbcjWk0gT+MEX/VOAhfT/zw0Z1z9q9oNg==
 
-"@nuxtjs/pwa@^3.2.2":
+"@nuxtjs/pwa@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-3.3.2.tgz#f48b43015282a9465be853087a96137c80a60bd3"
   integrity sha512-yVOaU0MKKmsw44Vtl1Rq+kfhXJF46AqXni2YFGpOMvemcaPbkc+PZDyZTf3mDJQkUKgaY1aiiHMisOS/6rvnPg==
@@ -1380,10 +1380,10 @@
     url-loader "^4.1.0"
     vue-svg-loader "^0.16.0"
 
-"@nuxtjs/tailwindcss@^3.2.0":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-3.3.1.tgz#a347929b97a3e08da1f841316f757c7cf0a9e956"
-  integrity sha512-ukAbmC7+3fRUJzlY7+lLRHLss9NvJARLI4TbzZMEl9EunN8j6ESYY6gXlMYGVUfaIqzSd1tjRL7wCi2QvxWXVw==
+"@nuxtjs/tailwindcss@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-3.3.3.tgz#f1c238b7c817423043dcde231d6bf062663a5b5f"
+  integrity sha512-IAWyKm9iXGlok0GgNcjEuoMvPIAmOrUmlAFJVlpZBTySr1Bs0aeZhNqfiTUSQAEaSDLFw+gwZvxRPrHytR3J0w==
   dependencies:
     clear-module "^4.1.1"
     consola "^2.15.0"
@@ -3190,7 +3190,7 @@ core-js@^2.6.5:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.6.5:
+core-js@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.0.tgz#0fc2d4941cadf80538b030648bb64d230b4da0ce"
   integrity sha512-W2VYNB0nwQQE7tKS7HzXd7r2y/y2SVJl4ga6oH/dnaLFzM0o2lB2P3zCkWj5Wc/zyMYjtgd5Hmhk0ObkQFZOIA==
@@ -7793,7 +7793,7 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-reading-time@^1.2.0:
+reading-time@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/reading-time/-/reading-time-1.2.1.tgz#c5533dca26fef91928a392e147ee51b64d163cba"
   integrity sha512-a27kU9sCJzx4JklmKFMXgMoCWlhBi75DFTbU7+M3rjh5SXRWyacYt02il3muYaA+SUQ7tg5gMQn7GC8zOxTt/g==
@@ -8131,10 +8131,10 @@ sass-loader@^10.1.0:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.29.0:
-  version "1.29.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.29.0.tgz#ec4e1842c146d8ea9258c28c141b8c2b7c6ab7f1"
-  integrity sha512-ZpwAUFgnvAUCdkjwPREny+17BpUj8nh5Yr6zKPGtLNTLrmtoRYIjm7njP24COhjJldjwW1dcv52Lpf4tNZVVRA==
+sass@^1.30.0:
+  version "1.30.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.30.0.tgz#60bbbbaf76ba10117e61c6c24f00161c3d60610e"
+  integrity sha512-26EUhOXRLaUY7+mWuRFqGeGGNmhB1vblpTENO1Z7mAzzIZeVxZr9EZoaY1kyGLFWdSOZxRMAufiN2mkbO6dAlw==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 
@@ -9370,7 +9370,7 @@ vue-server-renderer@^2.6.12:
     serialize-javascript "^3.1.0"
     source-map "0.5.6"
 
-vue-social-sharing@^3.0.3:
+vue-social-sharing@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/vue-social-sharing/-/vue-social-sharing-3.0.4.tgz#09d5af4872599fbf005b7ed8a52eaf926ef37eaa"
   integrity sha512-noifuAgZIiNnsVEwGYz0kTVRdj80JkEIt1Qp1HRTLYPPQsyKVhrIMqJGVQGQjm9cp4UB51pUOxdGElMVyavvtw==
