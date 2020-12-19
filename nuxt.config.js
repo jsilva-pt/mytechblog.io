@@ -1,7 +1,24 @@
 import theme from '@jsilva-pt/nuxt-content-theme-blog'
+import { footerLinks } from './blog.settings'
 
 const baseUrl = 'https://mytechblog.io'
-const blogAuthor = 'José Silva'
+
+const publicRuntimeConfig = {
+  baseUrl,
+
+  githubOwner: 'jsilva-pt',
+  githubRepository: 'mytechblog.io',
+  githubMainBranch: 'main',
+
+  twitterUsername: 'jmanuelsilvapt',
+  linkedinUsername: 'jsilva-pt',
+
+  showSocialIconsOnHeader: true,
+  sharingBlogPostEnabled: true,
+  sharingDefaultHashtags: ['MyTechBlog'],
+  
+  footerLinks
+}
 
 export default theme({
   feedOptions: {
@@ -9,17 +26,14 @@ export default theme({
     description: 'Frontend development articles',
     link: baseUrl,
   },
-  publicRuntimeConfig: {
-    baseUrl
-  },
+  publicRuntimeConfig,
   titleTemplate: '%s — MyTechBlog',
   pwa: {
     manifest: {
       short_name: 'MyTechBlog',
     },
     meta: {
-      name: 'MyTechBlog',
-      author: blogAuthor,
+      author: 'José Silva',
       theme_color: '#2C3E50',
       ogHost: baseUrl,
       twitterCard: 'summary_large_image',
@@ -32,6 +46,14 @@ export default theme({
   },
   i18n: {
     baseUrl,
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+      },
+    ],
+    defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
       messages: {

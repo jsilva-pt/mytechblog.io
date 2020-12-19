@@ -4,10 +4,10 @@
       <div
         class="xl:text-lg light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary font-medium leading-relaxed"
       >
-        <p>{{ $t('homepage.hi') }}</p>
-        <p>{{ $t('homepage.name') }}</p>
-        <p>{{ $t('homepage.about') }}</p>
-        <p class="mt-3">{{ $t('homepage.blog') }}</p>
+        <p class="mb-1">{{ $t('homepage.hi') }}</p>
+        <p class="mb-1">{{ $t('homepage.name') }}</p>
+        <p class="mb-1">{{ $t('homepage.about') }}</p>
+        <p>{{ $t('homepage.blog') }}</p>
       </div>
     </div>
 

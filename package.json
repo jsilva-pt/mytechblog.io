@@ -11,8 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@jsilva-pt/nuxt-content-theme-blog": "^0.2.3",
+    "@jsilva-pt/nuxt-content-theme-blog": "^0.4.0",
     "@nuxtjs/google-gtag": "^1.0.4",
-    "nuxt": "^2.14.9"
+    "nuxt": "^2.14.12"
   }
 }
